@@ -4,10 +4,10 @@
  * API MODULE:
  * Do the request to the server and return data as string
  * 
- * Depends on whatwg-fetch polyfill to have support in browsers which do not support Fetch Api
+ * Depends on whatwg-fetch polyfill to have support in browsers which do not support Fetch Api and es6-promise for the promise support
  *  
  */
-
+import 'es6-promise/auto';
 import 'whatwg-fetch';
 
 console.log("API_MODULE");

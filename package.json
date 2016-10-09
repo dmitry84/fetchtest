@@ -50,13 +50,16 @@
 		"karma-browserify": "^5.1.0",
 		"eslint": "^3.7.1",
 		"babel-eslint": "^7.0.0",
-		"vinyl-buffer": "^1.0.0"
+		"vinyl-buffer": "^1.0.0",
+		"es6-promise": "^4.0.5",
+		"babel-plugin-es6-promise": "^1.0.0"
 	},
 	"dependencies": {
 		"whatwg-fetch": "^1.0.0"
 	},
 	"babel": {
-		"presets": ["es2015"]
+		"presets": ["es2015"],
+		"plugins": ["es6-promise"]
 	},
 	"scripts": {
 		"postinstall": "bower install",
