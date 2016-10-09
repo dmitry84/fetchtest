@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Test task</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="thirdparty/css/prism.css">
+
+		<script type="text/javascript" src="js/bundle.js"></script>
+		<style>
+
+		</style>
+	</head>
+	<body>
+
+		<header>
+			<h1>Advertiser list</h1>
+		</header>
+		<main>
+			<div id='errorsPlaceholder' ></div>
+			<h3>Parameters</h3>
+			<form>
+				<div class="form-inline">
+					<label for="request_format">Select format:</label>
+					<select tabindex="1" id="request_format" class="form-item ">
+						<option value="json">JSON</option>
+						<option value="xml">XML</option>
+					</select>
+					<button tabindex="2" onclick="getAdvertiserList(); return false;" class="form-item" type="submit">Get data</button>
+				</div>
+			</form>
+			
+			<h3>Results</h3>
+
+			<div class="results" id="api_request_uri"></div>
+
+			<div class="results">
+				<pre id="api_result">
+		
+				</pre>
+			</div>
+
+		</main>
+
+	</body>
+</html>
